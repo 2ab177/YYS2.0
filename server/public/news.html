@@ -16,8 +16,13 @@
         <a class="text-white" href="javascript:;">游戏全目录</a>
       </div>
       <img class="py-1" src="image/logo_b5525b7.png" alt="" />
-      <div>
-        <a class="d-block px-3 h-100 border_left" href="">游戏充值7元优惠</a>
+      <div class="border_left">
+        <div class="pl-3">
+          <a class="d-block text-dark" href="">游戏充值7元优惠</a>
+          <a class="d-block text-dark" href="">限时领取免费课程</a>
+          <a class="d-block text-dark" href="">领取网易严选宝箱</a>
+          <a class="d-block text-dark" href="">游戏充值7元优惠</a>
+        </div>
       </div>
     </div>
     <div class="wrap">
@@ -101,10 +106,86 @@
       </ul>
       <hr class="my-0" />
       <!-- 新闻正文导航 -->
-      <div id="new_content">
+      <div class="position-relative newc">
+        <div class="new_content">     
+        </div>
+        <!-- 侧边隐藏栏 -->
+        <div class="clearfix rside">
+          <div class="cside pb-4">
+            <h3 class="download ml-4"></h3>
+            <div class="r_qr mx-auto">
+              <div class="line"></div>
+              <img class=" w-100" src="image/qr.png" alt="">
+              <p class="font_small text-center">扫一扫下载游戏</p>
+            </div>
+            <h3 class="jq ml-4 mt-5"></h3>
+            <!-- 侧边轮播1 -->
+            <main id="main">
+              <div id="banner">
+                <ul class="mb-0" id="ul-imgs" style="width:1350px; margin-left:0px;box-sizing: content-box;">
+                  <li><img src="image/4c984717-eaae-4319-ad25-b1470779e89d.jpg" alt=""></li>
+                  <li><img src="image/08ac0d5f-c79c-476c-a412-e96f5f7af4d9.jpg" alt=""></li>
+                  <li><img src="image/478c70e7-b22d-42bb-97bf-dd0ef15c5b9a.jpg" alt=""></li>
+                  <li><img src="image/c94215d7-7d3d-4ac5-8eb1-964605e21b30.jpg" alt=""></li>
+                  <li><img src="image/4c984717-eaae-4319-ad25-b1470779e89d.jpg" alt=""></li>
+                </ul>
+                <ul class="mb-0" id="ul-idxs">
+                  <!--虽然li个数比实际图片张数多1，但小圆点的个数不必多1-->
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </main>
+            <div class="position-relative">
+              <!-- 热门攻略 -->
+              <h3 class="rm ml-4 mt-4"></h3>
+              <a class="more" href="javascript:;"></a>
+            </div>
+            <ul class="list-unstyled rmgl ml-4">
+              <li class="mb-2"><span></span> 【斗技】助力为崽而战，超详细斗技翻牌思路呈上！</li>
+              <li class="mb-2"><span></span> 【玩法】从痒痒鼠变为囤囤鼠——你想囤的表格里全都有</li>
+              <li class="mb-2"><span></span> 【式神】单人真蛇10层 蛇/切/小小黑高效率阵容</li>
+              <li class="mb-2"><span></span> 【斗技】最强斗技！一百星！干货推荐！主流全式神带什么御魂才能提高胜率？</li>
+            </ul>
+            <div class="position-relative">
+              <!-- 同人 -->
+              <h3 class="tr ml-4 mt-4"></h3>
+              <a class="more" href="javascript:;"></a>
+            </div>
+            <!-- 轮播图2 -->
+            <main id="main2">
+              <div id="banner2">
+                <ul class="mb-0" id="ul-imgs2" style="width:1350px; margin-left:0px;box-sizing: content-box;">
+                  <li><img src="image/0ef12843-5591-4de2-8769-4006450fa68b.jpg" alt=""></li>
+                  <li><img src="image/06fdd508-c842-48c2-bc98-4262ee1ea6e0.png" alt=""></li>
+                  <li><img src="image/5c8b9dfe-5393-448a-8d68-b985c714fe43.png" alt=""></li>
+                  <li><img src="image/44432465-dde9-4152-a6e0-59a26a6c1ea8.jpg" alt=""></li>
+                  <li><img src="image/0ef12843-5591-4de2-8769-4006450fa68b.jpg" alt=""></li>
+                </ul>
+                <ul class="mb-0" id="ul-idxs2">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </main>
+            <!-- 官方媒体 -->
+            <h3 class="gfmt ml-4 mt-4"></h3>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li class="gzwb mr-2 pinkwbx"></li>
+              <li class="gzwx ml-2"></li>
+            </ul>
+            <img class="qr_wbx" src="image/wx_d99aea4.jpg" alt="">
+          </div>
+          <a class="rightx" href="javascript:;"><b></b><span>点击收起</span></a>
+        </div>
       </div>
+      <!-- 页脚 -->
       <footer class="footer_bg pt-4 pb-4">
-        <div class="clearfix">
+        <div class="clearfix cf">
           <img src="image/netease.2.png" alt="">
           <img src="image/nie.2.png" alt="">
           <img class="mx-3" src="image/wen.png" alt="">
@@ -115,9 +196,14 @@
             <a class="jz font_small text-white" href="javascript:;">点击查看家长监护工程&gt;</a>
           </div>
         </div>
+        </div>
       </footer>
     </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/news.js"> </script>
+    <script src="js/lunbo1.js"></script>
+    <script src="js/lunbo2.js"></script>
+    <script src="js/text-lunbo.js"></script>
   </body>
 </html>
+ 
