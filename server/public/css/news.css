@@ -226,7 +226,7 @@ a{
   position: absolute;
   top:0;
   right: 0;
-  transition: .5s linear;
+  transition: .2s linear;
 }
 .download,.jq,.rm,.tr,.gfmt{
   width: 146px;

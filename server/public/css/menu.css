@@ -1,0 +1,156 @@
+.menu{
+   display: flex;
+   width:340px;
+   height:50px;
+   background-color:transparent;
+   position: relative;
+   top:100px;left:200px;
+}
+
+.d1{
+width:78px;
+height:20px;
+}
+.d2{
+    width:48px;
+    height:20px
+}
+.d3{
+    width:0px;
+    height:20px
+}
+.d4{
+    width:0px;
+    height:20px
+}
+.spanone,.spantwo,.spanthr{
+    position: absolute;
+    background-color:gray;
+    width:0.5px;height:13px;
+    display: inline-block;
+    top:20px;left:90px;
+}
+.spantwo{ 
+   left:158px; 
+}
+.spanthr{
+    left:200px;
+}
+.erweima{
+    background-image:url(../image/menu_qrcode_d78d369.png);
+    width:18px;height:18px;
+    position: absolute;
+    top:18px;left:170px;
+}
+.erweima:hover{
+   background-image:url(../image/erweima.png);   
+}
+.nice{
+    color:#ac9768;
+    font-size:12px;
+    text-decoration: none;
+    width:40px;height:20px;
+    position: absolute;
+    top:19px;left:210px;
+}
+.n1,.n2,.n3,.n4{
+  width:20px;height:20px;
+  border-radius:50%;
+  position: absolute;
+  top:19px;
+}
+.n1{
+    background-image: url(../image/1.jpg);
+    left:253px;
+}
+.n2{
+    background-image: url(../image/2.jpg);
+    left:274px;
+}
+.n3{
+    background-image: url(../image/3.jpg);
+    left:295px;
+}
+.n4{
+    background-image: url(../image/5.jpg);
+    left:323px;
+}
+.n1:hover{
+    background-image:url(../image/hei1.png);
+}
+.n2:hover{
+    background-image:url(../image/hei2.png);
+}
+.n3:hover{
+    background-image:url(../image/hei3.png);
+}
+.n4:hover{
+    background-image:url(../image/hei4.png);
+}
+.btn-home,.menu_music{
+    color:#ac9768;
+    text-decoration: none;
+    font-size:12px;
+   line-height: 50px;
+}
+.menu_music{
+    position:absolute;
+    left:100px;
+}
+.pic{
+   background-image:url(../image/bigerweima.png);
+   background-size:100% 100%;
+   position: absolute;
+   width:100px;height:100px;
+   display: none;
+   top:20px;left:-40px;
+}
+.erweima:hover .pic{
+    display:block;
+}
+
+@keyframes yuying1{
+    0%{
+        height: 0%;
+    }
+    20%{
+        height:50%;
+    }
+     50%{
+        height: 100%;
+    } 
+     80%{
+        height: 50%;
+    } 
+    100%{
+        height: 0%;
+    }
+}	
+
+#container{
+    width: 25px;
+    height:15px;
+     margin: 200px auto; 
+     position: absolute;
+     bottom:-178px;left:130px;	 
+}
+#container #one{
+    animation:yuying1 0.8s infinite 0.2s;  
+}
+#container #two{
+    animation:yuying1 1.2s infinite 0.3s;  
+}
+#container #three{
+    animation:yuying1 1.4s infinite 0.4s;
+}
+
+#one,#two,#three{
+    width:1px;
+    height: 10px;
+    margin-left: 2px;
+    border-radius: 50px;
+    background-color: #999;
+    vertical-align: middle;
+    display: inline-block;
+}
+

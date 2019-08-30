@@ -1,0 +1,236 @@
+/*-底部背景*/
+.bottom-bg{
+    width:100%;
+    max-width: 1920px;
+    min-width: 1280px;
+   height:927px;
+   background:url("../image/footer/bg.png")center no-repeat;
+   position:relative;
+   margin-top:-50px;
+}
+
+/*底部背景中底部文字*/
+.bottom-bg-bot{
+    max-width: 1920px;
+    min-width: 1280px;
+   width:100%;
+   height:205px;
+   position:absolute;
+   left:0;
+   bottom:40px;
+}
+.bor-top{
+    width:153px;
+    height:26px;
+    margin:0 auto;
+    color:#fff;
+}
+.bor-top-span{
+    display:inline-block;
+    height:20px;
+    line-height:26px;
+    font-size:12px;
+    color:#fff;
+}
+.bor-top-ul{
+    width:104px;height:20px;
+    display:inline-block;
+    list-style-type:none;
+ }
+.bor-top-li{
+   width:20px;height:20px;
+   display:inline-block;
+   list-style-type:none;
+   border-radius:50%;
+    background:#fff;
+    background:url("../image/footer/sb.jpg")no-repeat;
+}
+.bor-top-li-a{
+    width:20px;height:20px;
+    display:inline-block;
+    background:url("../image/footer/bt01.jpg")no-repeat;
+    margin:0px 0px 0px 0px;
+    border-radius:50%;
+}
+.bor-top-li-a1{
+    width:20px;height:20px;
+    display:inline-block;
+    background:url("../image/footer/bt02.jpg")no-repeat;
+    margin:0px 0px 0px 0px;
+    border-radius:50%;
+}
+.bor-top-li-a2{
+    width:20px;height:20px;
+    display:inline-block;
+    background:url("../image/footer/bt03.jpg")no-repeat;
+    margin:0px 0px 0px 0px;
+    border-radius:50%;
+}
+.bor-top-li-a3{
+    width:20px;height:20px;
+    display:inline-block;
+    background:url("../image/footer/bt04.jpg")no-repeat;
+    margin:0px 0px 0px 0px;
+    border-radius:50%;
+}
+.bor-top-div{
+    width:102px;height:20px;
+   display:inline-block;
+}
+.bor-bottom{
+    width:955px;
+    height:179px;
+    padding:15px 0 10px;
+    margin:0 auto;
+}
+.bor-bottom-top{
+    width:955px;
+    height:48px;
+}
+.bor-bottom-le{
+  width:359px;
+  height:48px;
+}
+.bor-bottom-top-le-img{
+    margin-right:20px;
+}
+.bor-bottom-top-ri{
+    width:500px;
+    height:48px;
+    color:#fff;
+    display:inline-block;
+    position:absolute;
+    top:35px;
+    right:218px;
+}
+.bor-bottom-top-ri-i{
+    color:#fff;
+    font-style: normal;
+    font-size:12px;
+}
+.bor-bottom-top-ri-a{
+    text-decoration:none;
+    font-size:12px;
+    color:#fff;
+}
+
+.bot-bot{
+    width:955px;height:106px;
+}
+.bot-bot{
+    font-size:12px;
+    color:#ccc;
+}
+.margin{
+    margin-top:5px;
+}
+.a1{
+    text-decoration:none;
+    color:#fff;
+}
+.djck{
+    width:139px;
+    height:26px;
+    background-color:#610000;
+    position:absolute;
+    top:26px;
+    right:19px;
+}
+.djck-p{
+    font-size:12px;
+    color:#fff;
+    margin:0 auto;
+    line-height:26px;
+}
+.tang{
+    width:71px;
+    height:204px;
+    background:url(../image/footer/image1.png)no-repeat;
+    position:absolute;
+    top:329px;
+    left:268px;
+}
+/*底部动画*/
+.bott-ewm-box{
+    width:650px;
+    height:390px;
+    position:absolute;
+    top:206px;
+    right:35px;
+    cursor:pointer;
+}
+.bott-ewm{
+    width:356px;
+    height:354px;
+    position:relative;
+    margin:34px 0 0 130px;
+    cursor:pointer;
+}
+.white-circle{
+    width:276px;
+    height:276px;
+    background:url(../image/footer/bt-dong5.png)no-repeat;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-138px;
+    margin:-138px;
+    cursor:pointer;
+}
+.shine1{
+    width:356px;
+    height:354px;
+    background:url(../image/footer/bt-dong4.png)no-repeat;
+    opacity:0;
+    cursor:pointer;
+}
+.shine2{
+    position:absolute;
+    left:-7px;
+    top:-11px;
+    width:356px;
+    height:354px;
+    background:url(../image/footer/bt-dong3.png)no-repeat;
+    opacity:0;
+    cursor:pointer;
+}
+.month{
+    width:356px;
+    height:354px;
+    position:absolute;
+    left:-7px;
+    top:-11px;
+    background:url(../image/footer/bt-dong2.png)no-repeat;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.white{
+    width:276px;
+    height:276px;
+    background:url(../image/footer/bt-dong1.png)no-repeat;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-138px;
+    margin-top:-138px;
+    animation: scale2 2.8s ease infinite;
+}
+.white-con{
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    overflow:hidden;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-115px;
+    margin-top:-115px;
+}
+.black{
+    width:276px;
+    height:276px;
+    background:url(../image/footer/bt-dong.png)no-repeat;
+    transform: translate(9px,-55px);
+}

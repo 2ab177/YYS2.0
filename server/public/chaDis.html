@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/chaDis_js/vue.js"></script>
+    <link rel="stylesheet" href="css/chaDis_css/chaDis.css">
+</head>
+<body>
+    <div class="mian">
+        <!-- 头部 -->
+        <div class="mian_top">
+            <div class="mian_top_right">
+                <ul>
+                    <li><a href="javascript:;">商城首页</a></li>
+                    <li>/</li>
+                    <li><a href="javascript:;">新闻资讯</a></li>
+                    <li>/</li>
+                    <li><a href="javascript:;">游戏攻略</a></li>
+                    <li>/</li>
+                    <li><a href="javascript:;">同人社区</a></li>
+                    <li>/</li>
+                    <li>
+                        <a class="mian_bg" href="javascript:;">官方渠道
+                        <em class="sanjiao"></em>
+                        </a>
+                    </li>
+                    <li>/</li>
+                    <li><a href="javascript:;">周边商城</a></li>
+                    <li>/</li>
+                    <li><a href="javascript:;">藏宝阁</a></li>
+                    <li>/</li>
+                    <li><a href="javascript:;">网易大神</a></li>
+                </ul>
+            </div>
+            <div class="mian_top_drop">
+                <div class="top_drop_gf">
+                    <div class="drop_gf_left">
+                        <ul>
+                            <li><a href="javascript:;">
+                                <img src="image/chaDis_img/gf_lt.png" alt="">
+                                <p>官方论坛</p>
+                            </a>
+                            </li>
+                            <li><a href="javascript:;">
+                                <img src="image/chaDis_img/gf_tb.png" alt="">
+                                <p>百度贴吧</p>
+                            </a>
+                            </li>
+                            <li><a href="javascript:;">
+                                <img src="image/chaDis_img/gf_wb.png" alt="">
+                                <p>官方微博</p>
+                            </a>
+                            </li>
+                            <li><a href="javascript:;">
+                                <img src="image/chaDis_img/gf_wx.png" alt="">
+                                <p>官方微信</p>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="drop_gf_rigth">
+                        <ul>
+                            <li>
+                                <span>204422345（1群）</span>
+                                <span>586180977（6群）</span>
+                            </li>
+                            <li>
+                                <span>540687051（2群）</span>
+                                <span>477094979（7群）</span>
+                            </li>
+                            <li>
+                                <span>546653739（3群）</span>
+                                <span>239033695（8群）</span>
+                            </li>
+                            <li>
+                                <span>546027375（4群）</span>
+                                <span>478814406（9群）</span>
+                            </li>
+                            <li>
+                                <span>344590267（5群）</span>
+                                <span>478027123（10群）</span>
+                            </li>
+                            <li>
+                                <span>官方QQ群</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- logo -->
+        <a href="javascript:;" class="mian_logo">
+            <span></span>
+        </a>
+        <!-- 人物目录 -->
+        <div class="mian_catalog">
+            <!-- 目录 -->
+            <div class="catalog_left">
+                <div class="catalog_left_top">
+                </div>
+                <div class="catalog_left_bottom">
+                    <ul>
+                        <li>
+                            <span class="arrow in"></span>
+                            <i data-id="cata01" class="all hover"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata02" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata03" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata04" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata05" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata06" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata07" class="all"></i></li>
+                        <li>
+                            <span class="arrow"></span>
+                            <i data-id="cata08" class="all"></i></li>
+                    </ul>
+                    <div class="catLeBot_text">
+                        <span class="img_search"></span>
+                        <input type="text">
+                        <a href="javascript:;">搜索</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 人物 -->
+            <div id="app" class="catalog_right">
+                <div id="cata01" class="cataRig_Top">
+                    <div class="cata_overflow">
+                        <div v-for="(item,index) of emps" :key="index">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/character/${index+200}.png`">
+                            <p>{{item}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata02" class="cataRig_Top02">
+                    <div class="cata_overflow">
+                        <div v-for="(item02,index02) of emps02" :key="index02">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_Ld/ld_${index02+1}.png`">
+                            <p>{{item02}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata03" class="cataRig_Top03">
+                    <div class="cata_overflow">
+                        <div v-for="(item03,index03) of emps03" :key="index03">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_Sp/sp_${index03+1}.png`">
+                            <p>{{item03}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata04" class="cataRig_Top04">
+                    <div class="cata_overflow">
+                        <div v-for="(item04,index04) of emps04" :key="index04">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_Ssr/ssr_${index04+1}.png`">
+                            <p>{{item04}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata05" class="cataRig_Top05">
+                    <div class="cata_overflow">
+                        <div v-for="(item05,index05) of emps05" :key="index05">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_Sr/sr_${index05+1}.png`">
+                            <p>{{item05}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata06" class="cataRig_Top06">
+                    <div class="cata_overflow">
+                        <div v-for="(item06,index06) of emps06" :key="index06">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_R/r_${index06+1}.png`">
+                            <p>{{item06}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata07" class="cataRig_Top07">
+                    <div class="cata_overflow">
+                        <div v-for="(item07,index07) of emps07" :key="index07">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_N/n_${index07+1}.png`">
+                            <p>{{item07}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cata08" class="cataRig_Top08">
+                    <div class="cata_overflow">
+                        <div v-for="(item08,index08) of emps08" :key="index08">
+                            <a href="javascript:;">
+                                <span class="hover_bg">
+                                    <em></em>
+                                </span></a>
+                            <img :src="`image/chaDis_img/chara_Gt/gt_${index08+1}.png`">
+                            <p>{{item08}}</p>
+                            <span class="renwu"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部声明 -->
+            <div class="cataRig_Bou">
+                        <div class="par04">
+                            <div class="par04_top">
+                                <span>分享到:</span>
+                                <ul>
+                                    <li><a href="javascript:;"><img src="image/pagebg_img/weixin.png" alt="">微信</a></li>
+                                    <li><a href="javascript:;"><img src="image/pagebg_img/yixin.png" alt="">易信</a></li>
+                                    <li><a href="javascript:;"><img src="image/pagebg_img/weibo.png" alt="">新浪微博</a></li>
+                                    <li><a href="javascript:;"><img src="image/pagebg_img/kongjian.png" alt="">QQ空间</a></li>
+                                    <li><a href="javascript:;"><img src="image/pagebg_img/gengduo.png" alt="">更多</a></li>
+                                </ul>
+                            </div>
+                            <div class="par04_center">
+                                <div class="p04_cen_left">
+                                    <a href="javascript:;">
+                                        <img src="image/chaDis_img/netease.1.png" alt="">
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="image/chaDis_img/nie.1.png" alt="">
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="image/chaDis_img/wen.png" alt="">
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="image/chaDis_img/wen2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="p04_cen_rigth">
+                                    <ul>
+                                        <li><a href="javascript:;">公司简介</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">客服服务</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">相关法律</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">网易游戏</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">联系我们</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">商务合作</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">加入我们</a></li>
+                                        <li>-</li>
+                                        <li><a href="javascript:;">用户协议</a></li>
+                                    </ul>
+                                    <br>
+                                    <span>网易公司版权所有 ©1997-2019</span>
+                                    <a class="jh_a" href="javascript:;">点击查看家长监护工程 > </a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- 侧边框 -->
+        <div class="mian_side mian_side_fade">
+            <!-- <a href="javascript:;" class="side_tou">
+            </a>
+            <a href="javascript:;" class="side_tou02">
+            </a> -->
+            <a class="side_Arrow" href="javascript:;">
+                <span class="side_tou side_in"></span>
+                <span class="side_tou02"></span>
+            </a>
+            <div class="side_ewm">
+                <img src="image/chaDis_img/guanshu.png" alt="">
+                <img style="width: 91px" src="image/chaDis_img/xz_erweima.png" alt="">
+            </div>
+            <div class="side_xz">
+                <a class="side_ios" href="javascript:;"></a>
+                <a class="side_an" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+<script src="js/chaDis_js/jquery-1.11.3.js"></script>
+<script src="js/chaDis_js/chaDis.js"></script>
+<script>
+    $(".catalog_left_bottom").on("click",".all",function(){
+        var $all=$(this)
+        $all.addClass("hover").parent().siblings().children(".all").removeClass("hover")
+        $all.prev().addClass("in").parent().siblings().children(".arrow").removeClass("in")
+    })
+    $(".catalog_left_bottom").on("mouseover",".all",function(){
+        $(this).addClass("hover").prev().addClass("in")
+    })
+    $(".catalog_left_bottom").on("mouseout",".all",function(){
+        var $all=$(this)
+        if($all.parent().siblings().children(".all").hasClass("hover")){
+            $all.removeClass("hover").prev().removeClass("in")
+        }
+    })
+    $(".cata_overflow>div>a>.hover_bg").hover(function(){
+        $(this).children().toggleClass("hover")
+    })
+    var index=20;
+    $(".catalog_left_bottom").on("click",".all",function(){
+        var id=$(this).attr("data-id")
+        $("#"+id).css("zIndex",index).css("display","block").siblings().css("display","none")
+    })
+    $(".mian_bg").hover(function(){
+        $(this).children().toggleClass("sj_hover")
+        $(".mian>.mian_top").toggleClass("bg_fff")
+        $(".mian_top_drop").toggleClass("dorp_in")
+    })
+    $(".mian_top_drop").hover(function(){
+        $(".mian>.mian_top").toggleClass("bg_fff")
+        $(".mian_bg").toggleClass("mbg_fade").children().toggleClass("sj_hover")
+        $(this).toggleClass("dorp_in")
+    })
+    $("div>.side_Arrow").on("click","SPAN",function(){
+        var $side=$(this)
+        if($side.hasClass("side_in")){
+            $side.removeClass("side_in").siblings().addClass("side_in")
+        }
+        $(".mian_side").toggleClass("mian_side_in")
+    })
+</script>
+</body>
+</html>

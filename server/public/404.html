@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pageLoss_css/pageLose.css">
+</head>
+<body>
+    <div class="pageLose">
+        <!-- logo -->
+            <a href="javascript:;" class="lose_logo">
+                <img src="image/pageLose_img/100.webp">
+                <img src="image/pageLose_img/icon.webp">
+            </a>
+            <div class="mian">
+                <!-- 返回官网按钮 -->
+                <a href="javascript:;" class="lose_btn_gw">
+                        <h1>进入官网</h1>
+                    </a>
+                    <div class="qr">
+                        <div id="top01" class="qr_top">
+                            <img src="image/pageLose_img/qr_wb_1301b70.jpg">
+                            <p>扫描关注<strong>官方微博</strong></p>
+                            <strong>网易阴阳师手游</strong>
+                        </div>
+                        <div id="top02" class="qr_top qr_in">
+                            <img src="image/pageLose_img/qr_wx_1df6c6b.jpg">
+                            <p>扫描关注<strong>官方微信</strong></p>
+                            <strong>yinyangshi163</strong>
+                        </div>
+                        <ul class="qr_tab">
+                            <li data-id="top01" class="qr_wb hover">官方微博</li>
+                            <li data-id="top02" class="qr_wx">官方微信</li>
+                        </ul>
+                    </div>
+            </div>        
+    </div>
+    <!-- 底部声明 -->
+    <div class="cataRig_Bou">
+        <div class="par04">
+            <div class="par04_center">
+                        <div class="p04_cen_left">
+                            <a href="javascript:;">
+                                <img src="image/pageLose_img/netease.1.png" alt="">
+                            </a>
+                            <a href="javascript:;">
+                                <img src="image/pageLose_img/nie.1.png" alt="">
+                            </a>
+                            <a href="javascript:;">
+                                <img src="image/pageLose_img/wen.png" alt="">
+                            </a>
+                            <a href="javascript:;">
+                                <img src="image/pageLose_img/wen2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="p04_cen_rigth">
+                            <ul>
+                                <li><a href="javascript:;">公司简介</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">客服服务</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">相关法律</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">网易游戏</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">联系我们</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">商务合作</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">加入我们</a></li>
+                                <li>-</li>
+                                <li><a href="javascript:;">用户协议</a></li>
+                            </ul>
+                            <br>
+                            <span>网易公司版权所有 ©1997-2019</span>
+                            <a class="jh_a" href="javascript:;">点击查看家长监护工程 > </a>
+                        </div>
+            </div>
+        </div>
+    </div>
+<script src="js/pageLoss_js/jquery-1.11.3.js"></script>
+<script>
+    $(".qr>ul>li").hover(function(){
+    var li=$(this);
+        if(li.nodeClass!="hover"){
+            li.addClass("hover").siblings().removeClass("hover")
+        }
+        var id=$(this).attr("data-id")
+        $("#"+id).removeClass("qr_in").siblings().addClass("qr_in")
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.my_footer{width:100%;}
+@media screen and (min-width:992px){
+    .my_footer{height:50rem;}
+}@media screen and (max-width:991px){
+    .my_footer{height:50rem;}
+}

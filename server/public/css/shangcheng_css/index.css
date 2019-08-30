@@ -1,0 +1,205 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;font-size: 12px;color:#666;}
+/* 头部 */
+.sc_mian{
+    height: 31px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.sc_top{
+    width:1154px;
+    height: 31px;
+    margin:0 auto;
+}
+.sc_top>.sc_top_left{
+    width:150px;
+    height:31px;
+    float: left;
+    line-height: 31px;
+}
+.sc_top_left>.jiantou{
+    display: inline-block;
+    width: 7px;
+    height: 6px;
+    background:url(../../image/shangcheng_img/icon.less.png);
+    background-position:-35px -1176px;
+}
+.sc_top_left>.sc_top_sign{
+    float: right;
+}
+.sc_top>.sc_top_right{
+    width:420px;
+    height:31px;
+    float: right;
+}
+.sc_top_right>.sc_top_order{
+    list-style: none;
+    line-height: 31px;
+}
+.sc_top_right>.sc_top_order>li{
+    float: left;
+    margin:0 10px;
+}
+.sc_top_right>ul>li>.jiantou02{
+    display: inline-block;
+    width: 7px;
+    height: 6px;
+    background:url(../../image/shangcheng_img/icon.less.png);
+    background-position:-35px -1176px;
+}
+.sc_center{
+    width:1154px;
+    height: 120px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sc_center_left02>.sc_search_a{
+    display: inline-block;
+    width:36px;
+    height:36px;
+    padding-left:2px; 
+    border:1px solid #eee;
+    border-left: 0;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+.sc_center_left02>.sc_search_a>.sc_center_search{
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    background:url(../../image/shangcheng_img/icon.less.png);
+    background-position: -1155px -71px;
+}
+.sc_center_left02>input{
+    width:146px;
+    height:32px;
+    float: left;
+}
+.sc_right>.sc_center03{
+    width: 50px;
+    height: 60px;
+    padding-right: 110px;
+}
+.sc_center02>.sc_center03>.sc_center02_shopping{
+    display: inline-block;
+    background:url(../../image/shangcheng_img/icon.less.png);
+    background-position: -276px -1140px;
+    width: 19px;
+    height: 13px;
+}
+.sc_center03{
+    border: 1px solid #eaeaea;
+    padding: 5px;
+}
+/*头部图片*/
+.sc_picture{
+    width:100%;
+    height:873px;
+    background:url(../../image/shangcheng_img/banner_bg.jpg) no-repeat center;
+}
+.sc_sc_picture{
+    width:100%;
+    height:20317px;
+    background:url(../../image/shangcheng_img/box_bg.jpg)no-repeat top center;
+}
+.sc_sc_picture>.sc_picture02{
+    width: 1200px;
+    margin: 0 auto;
+}
+.sc_sc_picture>.sc_picture02>img{
+    float: left;
+}
+.sc_sc_picture>.sc_picture02>a>img{
+    float: left;
+}
+.sc_bottom{
+    width: 1154px;
+    height:105px;
+    margin: 48px auto;
+    display: flex;
+}
+.sc_bottom>.sc_bottom_01{
+    float: left;
+}
+.sc_bottom_01>li{
+    width:227px;
+    height:53px;
+    list-style: none;
+    padding: 24px 0 24px 60px;
+    float: left; 
+}
+.sc_bottom_01>li~li{
+    border-left:1px solid #eaeaea;
+}
+
+.sc_bottom_01>li>span{
+    width: 53px;
+    height:53px;
+    background:url(../../image/shangcheng_img/icon.less.png);
+    display:inline-block;
+    float: left;
+}
+.sc_bottom_01>li>.sc_bottom_picture{
+    background-position: -143px -1049px; 
+}
+.sc_bottom_01>li>.sc_bottom_picture_01{
+    background-position: -198px -1049px;
+}
+.sc_bottom_01>li>.sc_bottom_picture_02{
+    background-position: -88px -1049px;
+}
+.sc_bottom_01>li>.sc_bottom_picture_03{
+    background-position: -253px -1049px;
+}
+.sc_bottom_01>li>h3{
+    margin: 6px 0 6px 64px;
+    font-weight: 700;
+    color: #fc5600;
+}
+.sc_bottom_01>li>p{
+    margin: 0 0 0 64px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.sc_shopping{
+    width:1159px;
+    height:120px;
+    border:1px solid #eaeaea;
+    margin:24px auto;
+    padding: 20px 0;
+}
+.sc_shopping>.sc_shopping_01{
+    width:1160px;
+    float: left;
+    list-style:none;
+    display: flex;
+    justify-content:space-around;
+}
+.sc_shopping>.sc_shopping_01>li{
+    padding: 0 0 0 58px;
+    height: 110px;
+}
+.sc_shopping_01>li~li{
+    border-left:1px solid #eaeaea;
+}
+.sc_shopping>.sc_shopping_01>li>h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.sc_shopping>.sc_shopping_01>p{
+    line-height: 20px;
+}
+.sc_shopping>.sc_shopping_01>p>a{
+    color: #666;
+    text-decoration: none;
+}
+.the_top{
+    display:inline-block;
+    width:242px;
+    height:87px;
+    margin-left: 40%;
+}
